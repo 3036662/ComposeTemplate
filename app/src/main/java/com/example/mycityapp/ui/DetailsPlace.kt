@@ -28,7 +28,7 @@ fun RecommendedPlace(
     place:Place,
     modifier: Modifier=Modifier
 ){
-     Surface(modifier=modifier.fillMaxSize()) {
+     Surface(modifier=modifier.fillMaxSize().border(1.dp,Color.Black)) {
          Column(
              modifier = Modifier.shadow(5.dp).padding(20.dp)
 
@@ -54,9 +54,10 @@ fun RecommendedPlaceLandscape(
     place: Place,
     modifier: Modifier=Modifier
 ){
-    Surface(modifier=modifier.padding(10.dp).fillMaxSize()) {
+    Surface(modifier=modifier.padding(10.dp).fillMaxSize().border(1.dp,Color.Black)
+    ) {
         Row(
-            modifier = modifier.shadow(5.dp).padding(20.dp)
+            modifier = Modifier.shadow(5.dp).padding(20.dp)
 
         ) {
             Image(
@@ -67,7 +68,7 @@ fun RecommendedPlaceLandscape(
                 contentScale = ContentScale.FillWidth
             )
             Spacer(modifier = modifier.height(10.dp))
-            Text(text = stringResource(id = place.desc),modifier=modifier.weight(2.0f).verticalScroll(rememberScrollState()))
+            Text(text = stringResource(id = place.desc),modifier=Modifier.weight(2.0f).verticalScroll(rememberScrollState()))
         }
     }
 }

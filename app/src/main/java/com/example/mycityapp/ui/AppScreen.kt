@@ -1,12 +1,12 @@
 package com.example.mycityapp.ui
 
 
+//import androidx.lifecycle.viewmodel.compose.viewModel
+
 import android.app.Activity
-import android.util.Log
 import androidx.activity.compose.BackHandler
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -17,17 +17,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.mycityapp.R
-
-import androidx.navigation.compose.rememberNavController
 import com.example.mycityapp.model.AppUiState
 import com.example.mycityapp.model.AppViewModel
 import com.example.mycityapp.model.Place
@@ -50,7 +43,7 @@ fun AppScreen(
     modifier: Modifier=Modifier
 ){
 
-    val viewModel:AppViewModel= viewModel()
+    val viewModel:AppViewModel =viewModel()
     val uiState:AppUiState by viewModel.uiState.collectAsState()
     val windowWidthSizeClass=windowSize.widthSizeClass
     val currentScreen=uiState.currentScreen
@@ -134,6 +127,7 @@ fun AppScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AppBar(
     currentScreen:Screens,
