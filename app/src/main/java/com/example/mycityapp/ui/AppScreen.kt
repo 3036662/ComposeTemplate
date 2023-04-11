@@ -1,7 +1,9 @@
 package com.example.mycityapp.ui
 
 
+import android.app.Activity
 import android.util.Log
+import androidx.activity.compose.BackHandler
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,6 +18,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.modifier.modifierLocalConsumer
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -46,18 +49,28 @@ fun AppScreen(
     windowSize:WindowSizeClass,
     modifier: Modifier=Modifier
 ){
-  //  val navController = rememberNavController()
-  //  val navBackStackEntry by navController.currentBackStackEntryAsState()
-  //  val currentDestination = navBackStackEntry?.destination?.route
+
     val viewModel:AppViewModel= viewModel()
     val uiState:AppUiState by viewModel.uiState.collectAsState()
     val windowWidthSizeClass=windowSize.widthSizeClass
-   // val currentScreen= Screens.valueOf(currentDestination ?: Screens.HOME.name)
     val currentScreen=uiState.currentScreen
+    val activity= LocalContext.current as Activity
+
+    BackHandler {
+
+        if (currentScreen==Screens.HOME|| currentScreen==Screens.EXPANDED_HOME){
+            activity.finish()
+        }
+        else{
+            viewModel.popBackScreen()
+        }
+    }
 
     Scaffold(
         topBar = { AppBar(currentScreen = currentScreen,
-                          onBackClicked = {viewModel.popBackScreen()})
+                          onBackClicked = {
+                              if (currentScreen==Screens.HOME || currentScreen==Screens.EXPANDED_HOME) activity.finish()
+                              else viewModel.popBackScreen()})
         }
     ) {paddingValues ->
         if (windowWidthSizeClass== WindowWidthSizeClass.Expanded && currentScreen!=Screens.EXPANDED && currentScreen!=Screens.EXPANDED_HOME){
@@ -130,14 +143,14 @@ fun AppBar(
     SmallTopAppBar(
         title = {Text(stringResource(id =currentScreen.title))},
         navigationIcon = {
-            if (currentScreen!=Screens.HOME && currentScreen!=Screens.EXPANDED_HOME) {
+        //    if (currentScreen!=Screens.HOME && currentScreen!=Screens.EXPANDED_HOME) {
                 IconButton(onClick = onBackClicked) {
                     Icon(
                         Icons.Filled.ArrowBack,
                         contentDescription = stringResource(id = R.string.back)
                     )
                 }
-            }
+          //  }
         }
     )
 }
