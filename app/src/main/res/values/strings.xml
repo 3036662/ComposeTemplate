@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">My City app</string>
+    <string name="no_description">Sorry, we are working on description</string>
+    <!--Restaurants-->
+        <string name="rest_patriki">Patriki</string>
+        <string name="rest_whiteRabbit">White Rabbit</string>
+        <string name="rest_cidreria">Cidreria</string>
+        <string name="rest_visota5642">Height 5642</string>
+        <string name="rest_varvarka3">Varvarka 3</string>
+        <string name="rest_patriki_desc">The restaurant of the author\'s cuisine from Anton Pinsky on Malaya Bronnaya. Artem Losev and Vitaly Istomin (Ava Patriki) are responsible for the kitchen. Seafood and fresh fish are prepared. The concept is based on twists on understandable dishes — sushi is served without rice, and donuts are made from black cod. The main dishes include beef with orzo and pecorino and sweet shrimp served with fresh strawberries. The interior for Patrika was designed by Irina Glick\'s studio — in a small space it was possible to preserve airiness due to light tones, floor-to-ceiling windows and minimalistic furniture.</string>
+        <string name="rest_whiteRabbit_desc">Panoramic restaurant of new Russian cuisine on the sixteenth floor of Smolensky Passage. It offers a view of the historical center of Moscow.The space of the "White Rabbit" has a two-level layout. The upper and lower halls are decorated in the spirit of the magical world from Alice in Wonderland. The fabulous atmosphere is supported by decorative items: Victorian-style furniture, an unusual bar counter made of book spines and a six-meter fireplace with decorative moldings.</string>
+        <string name="rest_cidreria_desc">The main temple of cider lovers in Moscow and the largest cider house in the city both in size and assortment. A big company with different taste preferences? Sophisticated "geeks" of ciders</string>
+        <string name="rest_visota5642_desc">Respectable Caucasian cuisine restaurant in Moscow. The numbers in the name of the restaurant mean the height of the western peak of Elbrus. It is from the foot of this mountain range that seasonal ingredients are delivered to the restaurant.</string>
+        <string name="rest_varvarka3_desc">A wide range of cigars allows you to make a diverse choice: from classic cigars to the most daring and unusual solutions. Also, we are joined monthly by people who have never tried cigars until recently and have fallen in love with them as much as we love them. If you haven\'t had any experience yet, don\'t hesitate, fumilliers will help with the selection and serving of cigars.</string>
+    <!--Coffee shops-->
+        <string name="coffee_flat">Flat</string>
+        <string name="coffee_flat_desc">FLAT — a coffee shop where you can stop by on your way to work for delicious coffee, and a great place to relax with friends, including pets  we adore animals and are waiting for you with dogs, cats, toads, etc. We are sure that you and they will be comfortable and cozy with us.</string>
+        <string name="coffee_shortTalk">Short Talk</string>
+        <string name="coffee_shortTalk_desc">The concept of Short Talk Cafe is built around a conversation: a pleasant conversation with a cup of fragrant coffee and delicious dishes that are sure to become your companions in our cozy space.</string>
+        <string name="coffee_cvetnoy13">Cvetnoy 13</string>
+        <string name="coffee_cvetnoy13_desc">A popular cafe of a large chain of coffee shops. The interiors, which do not pretend to be refined, offer all kinds of variations of coffee and coffee drinks, breakfasts and business lunches. There is a selection of pancakes, salads and sandwiches. Desserts are displayed behind a glass case. Alcohol is represented by several types of cocktails, mainly seasonal. Pencils and coloring books are brought to young guests. Jazz, blues and lounge sounds softly in the background.</string>
+        <string name="coffee_shelter">Shelter</string>
+        <string name="coffee_shelter_desc">Cozy anti-cafe Shelter in the center of Moscow. We work around the clock! The best board games, delicious tea and game consoles</string>
+    <!--Kid friendly places-->
+        <string name="kids_ministry">Ministry of Magic</string>
+        <string name="kids_ministry_desc">The largest family immersive interactive space,where all the magic of the world is gathered under one roof!</string>
+        <string name="kids_arbat16">Arbat 16</string>
+        <string name="kids_arbat16_desc">The Museums of Childhood "Tales of Arbat 16 is a magical world, thanks to which you will plunge into incredible exciting adventures. You will be transported to your favorite fairy tales and find yourself in fantastic places where you have never been before. You will experience an emotional flurry – surprise, admiration, joy, excitement, curiosity, fun, happiness. Make cool photos that you can brag about on social networks. Fairy tales and Entertainment on the Arbat will delight children and adults, because they give the most valuable things – bright emotions, amazing discoveries and a fresh look at the world. Go ahead for new impressions!</string>
+        <string name="kids_unrealPlace">Unreal Place</string>
+        <string name="kids_unrealPlace_desc">Virtual Reality Club in Moscow</string>
+        <string name="kids_kidburg">Kidburg</string>
+        <string name="kids_kidburg_desc">An interactive center for children, where you can have fun and have fun with your child.</string>
+        <string name="kids_kidzania">Kidzania</string>
+        <string name="kids_kidzania_desc">Kidzania is not at all like the usual amusement parks. Here, children are not promised to fulfill all the whims — instead, they are offered useful knowledge</string>
+    <!-- Parks -->
+        <string name="park_gorky">Gorky Park</string>
+        <string name="park_gorky_descr">Gorky Park is a world—class central park of culture and recreation, one of the most beautiful places in Moscow, the main park of the country.</string>
+        <string name="park_izmailovo">Izmailovo Park</string>
+        <string name="park_izmailovo_desc">Izmailovo Nature and Historical Park (formerly the Izmailovo Park of Culture and Recreation named after Stalin) is the largest of the city parks in Europe.</string>
+        <string name="park_kuskovo">Kuskovo Park</string>
+        <string name="park_kuskovo_desc">A large well-groomed territory, a beautiful park and garden, shady alleys, an ideal place for photo shoots.</string>
+        <string name="park_caricino">Tsaritsyno Park</string>
+        <string name="park_caricino_desc">Tsaritsyno is a palace ensemble, greenhouses, a historical landscape park with ponds and pavilions, park areas with flower beds and a light and music fountain.</string>
+    <!--Categories-->
+    <string name="cat_rest">Restaurants</string>
+    <string name="cat_parks">Parks</string>
+    <string name="cat_kidsFriendly">Kids friendly places</string>
+    <string name="cat_cofee">Coffee shops</string>
+    <!-- Screen names-->
+    <string name="scr_home">Categories</string>
+    <string name="scr_places">Places</string>
+    <string name="scr_details">Details about place</string>
+    <string name="scr_expanded">Best Places in Moscow</string>
+    <!-- ContDescr-->
+    <string name="back">Back</string>
+    <string name="err">error</string>
+    </resources>
