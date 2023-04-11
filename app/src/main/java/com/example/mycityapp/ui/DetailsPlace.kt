@@ -35,11 +35,11 @@ fun RecommendedPlace(
          ) {
              Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
                  Image(
-                     painter = painterResource(id = R.drawable.baseline_image_24),
+                     painter = painterResource(place.img),
                      contentDescription = "Image for ${place.title}",
-                     modifier = Modifier.sizeIn(80.dp, 80.dp, 160.dp, 160.dp),
+                     //modifier = Modifier.sizeIn(80.dp, 80.dp, 160.dp, 160.dp),
                      alignment = Alignment.Center,
-                     contentScale = ContentScale.FillWidth
+                     contentScale = ContentScale.Fit
                  )
              }
              Spacer(modifier = Modifier.height(10.dp))
@@ -61,13 +61,13 @@ fun RecommendedPlaceLandscape(
 
         ) {
             Image(
-                painter = painterResource(id = R.drawable.baseline_image_24),
+                painter = painterResource(place.img),
                 contentDescription = "Image for ${place.title}",
                 modifier = modifier.weight(0.5f),
                 alignment = Alignment.Center,
-                contentScale = ContentScale.FillWidth
+                contentScale = ContentScale.Fit
             )
-            Spacer(modifier = modifier.height(10.dp))
+            Spacer(modifier = modifier.width(10.dp))
             Text(text = stringResource(id = place.desc),modifier=Modifier.weight(2.0f).verticalScroll(rememberScrollState()))
         }
     }
